@@ -1,3 +1,4 @@
+# Streamlit App
 import streamlit as st
 import preprocessor, helper
 import matplotlib.pyplot as plt
@@ -5,139 +6,86 @@ import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
 
-# --- Streamlit Page Config ---
 st.set_page_config(page_title="WhatsApp Chat Analyzer", layout="wide")
-st.sidebar.title("📊 WhatsApp Chat Analyzer")
+st.sidebar.title("\ud83d\udcca WhatsApp Chat Analyzer")
 
-# --- File Upload ---
-uploaded_file = st.sidebar.file_uploader("📂 Choose a WhatsApp Chat File")
-if uploaded_file is not None:
-    bytes_data = uploaded_file.getvalue()
-    data = bytes_data.decode("utf-8")
+uploaded_file = st.sidebar.file_uploader("\ud83d\udcce Choose a WhatsApp Chat File")
+if uploaded_file:
+    data = uploaded_file.getvalue().decode("utf-8")
     df = preprocessor.preprocess(data)
+    if df.empty:
+        st.error("Failed to parse the chat data. Ensure it's a valid exported WhatsApp chat file.")
+    else:
+        df['user'] = df['user'].fillna("Unknown")
+        user_list = sorted(df['user'].dropna().unique().tolist())
+        if 'group_notification' in user_list:
+            user_list.remove('group_notification')
+        user_list.insert(0, "Overall")
 
-    # Ensure 'user' column has no NaN values
-    df['user'] = df['user'].fillna("Unknown")
+        selected_user = st.sidebar.selectbox("\ud83d\udc65 Analyze messages of", user_list)
+        if st.sidebar.button("\ud83d\udd0d Show Analysis"):
+            num_messages, words, num_media, num_links = helper.fetch_stats(selected_user, df)
+            st.markdown("## \ud83d\udcca Chat Statistics")
+            col1, col2, col3, col4 = st.columns(4)
+            col1.metric("💬 Total Messages", num_messages)
+            col2.metric("📝 Words", words)
+            col3.metric("📸 Media Shared", num_media)
+            col4.metric("🔗 Links Shared", num_links)
 
-    # Fetch unique users
-    user_list = df['user'].dropna().unique().tolist()
-    if 'group_notification' in user_list:
-        user_list.remove('group_notification')
-    user_list.sort()
-    user_list.insert(0, "Overall")
-
-    selected_user = st.sidebar.selectbox("👥 Analyze messages of", user_list)
-
-    if st.sidebar.button("🔍 Show Analysis"):
-
-        # --- Display Key Statistics ---
-        num_messages, words, num_media_messages, num_links = helper.fetch_stats(selected_user, df)
-        st.markdown("## 📊 **Chat Statistics**")
-
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric(label="💬 Total Messages", value=num_messages)
-        col2.metric(label="📝 Total Words", value=words)
-        col3.metric(label="📸 Media Shared", value=num_media_messages)
-        col4.metric(label="🔗 Links Shared", value=num_links)
-
-        # --- Monthly Timeline ---
-        st.markdown("## 📅 **Monthly Activity Timeline**")
-        timeline = helper.monthly_timeline(selected_user, df)
-        if not timeline.empty:
-            fig = px.line(timeline, x='time', y='message', markers=True, line_shape="spline",
-                          labels={"time": "Month", "message": "Message Count"},
-                          template="plotly_dark")
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.warning("No data available for Monthly Activity Timeline.")
-
-        # --- Daily Timeline ---
-        st.markdown("## 🗓 **Daily Message Trends**")
-        daily_timeline = helper.daily_timeline(selected_user, df)
-        if not daily_timeline.empty:
-            fig = px.line(daily_timeline, x='only_date', y='message', markers=True, line_shape="spline",
-                          labels={"only_date": "Date", "message": "Message Count"},
-                          template="plotly_dark")
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.warning("No data available for Daily Message Trends.")
-
-        # --- Most Active Users (Group Level) ---
-        if selected_user == 'Overall':
-            st.markdown("## 🔥 **Most Active Users**")
-            x, new_df = helper.most_busy_users(df)
-
-            if not x.empty:
-                col1, col2 = st.columns(2)
-                with col1:
-                    st.dataframe(new_df.style.set_properties(**{'background-color': '#1E1E1E', 'color': 'white'}))
-
-                with col2:
-                    x = x.reset_index()
-                    x.columns = ['Users', 'Messages']
-                    fig = px.bar(x, x='Users', y='Messages',
-                                 labels={'Users': 'Users', 'Messages': 'Messages'},
-                                 color='Messages', color_continuous_scale="reds", template="plotly_dark")
-                    fig.update_traces(marker=dict(line=dict(color='white', width=1)))
-                    fig.update_layout(xaxis_title="User", yaxis_title="Messages Sent", showlegend=False)
-                    st.plotly_chart(fig, use_container_width=True)
-            else:
-                st.warning("No data available for Most Active Users.")
-
-        # --- Wordcloud ---
-        st.markdown("## ☁️ **WordCloud - Most Used Words**")
-        df_wc = helper.create_wordcloud(selected_user, df)
-
-        if df_wc is not None:
-            fig, ax = plt.subplots()
-            ax.imshow(df_wc, interpolation='bilinear')
-            ax.axis("off")
-            st.pyplot(fig, use_container_width=True)
-        else:
-            st.warning("No data available for WordCloud.")
-
-        # --- Most Common Words ---
-        most_common_df = helper.most_common_words(selected_user, df)
-        st.markdown("## 🔠 **Most Common Words Used**")
-        if not most_common_df.empty:
-            fig = px.bar(most_common_df, x=1, y=0, orientation='h', color=1, text=1,
-                         labels={'0': 'Words', '1': 'Count'}, template="plotly_dark")
-            fig.update_traces(marker_color="cyan", textposition="outside", opacity=0.8)
-            st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.warning("No data available for Most Common Words.")
-
-        # --- Emoji Analysis ---
-        st.markdown("## 😂 **Emoji Analysis**")
-        emoji_df = helper.emoj_helper(selected_user, df)
-        if not emoji_df.empty:
-            col1, col2 = st.columns(2)
-            with col1:
-                st.dataframe(emoji_df.style.set_properties(**{'background-color': '#1E1E1E', 'color': 'white'}))
-            with col2:
-                fig = go.Figure(data=[go.Pie(labels=emoji_df[0].head(), values=emoji_df[1].head(),
-                                             textinfo="label+percent", hole=0.4,
-                                             marker=dict(colors=sns.color_palette("pastel")))])
-                fig.update_layout(title_text="Top Used Emojis", template="plotly_dark")
+            # Monthly Timeline
+            st.markdown("## 📅 Monthly Activity Timeline")
+            timeline = helper.monthly_timeline(selected_user, df)
+            if not timeline.empty:
+                fig = px.line(timeline, x='time', y='message', markers=True, template="plotly_dark")
                 st.plotly_chart(fig, use_container_width=True)
-        else:
-            st.warning("No data available for Emoji Analysis.")
+            else:
+                st.warning("No data available.")
 
-        # --- Weekly Activity Heatmap ---
-        st.markdown("## 📆 **Weekly Activity Heatmap**")
-        user_heat_map = helper.activity_heat_map(selected_user, df)
-        if not user_heat_map.empty:
-            fig, ax = plt.subplots(figsize=(12, 5))
-            sns.heatmap(
-                user_heat_map,
-                cmap="mako",  # Or try "rocket", "mako", "viridis" for a modern look
-                annot=False,
-                cbar=True,
-                square=True,  # Ensures equal aspect ratio for a grid look
-                linewidths=0  # Removes gaps between blocks
-            )
-            ax.set_title("Weekly Activity Heatmap", fontsize=16, fontweight='bold', pad=15, color='white')
-            ax.set_facecolor('#1E1E1E')  # Background color
-            st.pyplot(fig)
-        else:
-            st.warning("No data available for Weekly Activity Heatmap.")
+            # Daily Trends
+            st.markdown("## 🗓 Daily Trends")
+            daily_timeline = helper.daily_timeline(selected_user, df)
+            if not daily_timeline.empty:
+                fig = px.line(daily_timeline, x='only_date', y='message', markers=True, template="plotly_dark")
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.warning("No data available.")
+
+            # Most Active Users
+            if selected_user == 'Overall':
+                st.markdown("## 🔥 Most Active Users")
+                x, new_df = helper.most_busy_users(df)
+                if not x.empty:
+                    fig = px.bar(x.reset_index(), x='index', y=x.columns[0], color=x.columns[0], template="plotly_dark")
+                    st.plotly_chart(fig, use_container_width=True)
+                else:
+                    st.warning("No data available.")
+
+            # Wordcloud
+            st.markdown("## ☁️ WordCloud")
+            df_wc = helper.create_wordcloud(selected_user, df)
+            if df_wc is not None:
+                fig, ax = plt.subplots()
+                ax.imshow(df_wc, interpolation='bilinear')
+                ax.axis("off")
+                st.pyplot(fig, use_container_width=True)
+            else:
+                st.warning("No data available.")
+
+            # Emoji Analysis
+            st.markdown("## 😂 Emoji Analysis")
+            emoji_df = helper.emoj_helper(selected_user, df)
+            if not emoji_df.empty:
+                fig = go.Figure(data=[go.Pie(labels=emoji_df[0], values=emoji_df[1], textinfo="label+percent")])
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.warning("No data available.")
+
+            # Weekly Activity Heatmap
+            st.markdown("## 📆 Weekly Activity Heatmap")
+            heatmap = helper.activity_heat_map(selected_user, df)
+            if not heatmap.empty:
+                fig, ax = plt.subplots()
+                sns.heatmap(heatmap, cmap="mako", annot=False, linewidths=0, ax=ax)
+                st.pyplot(fig)
+            else:
+                st.warning("No data available.")

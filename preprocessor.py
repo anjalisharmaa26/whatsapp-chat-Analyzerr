@@ -1,12 +1,13 @@
 import re
 import pandas as pd
 
+
 def preprocess(data):
     # Define regex patterns for 24-hour and 12-hour (AM/PM) time formats
     pattern_24hr = r'\d{1,2}/\d{1,2}/\d{2,4},\s\d{1,2}:\d{2}\s-\s'
     pattern_12hr = r'\d{1,2}/\d{1,2}/\d{2,4},\s*\d{1,2}:\d{2}\s*(?:AM|PM|am|pm)\s*-\s'
 
-    # Detect time format in the input data
+    # Detect time format
     if re.search(r'\d{1,2}:\d{2}\s*(?:AM|PM|am|pm)', data, re.IGNORECASE):
         pattern = pattern_12hr
         am_pm_format = True
@@ -14,27 +15,26 @@ def preprocess(data):
         pattern = pattern_24hr
         am_pm_format = False
 
-    # Extract messages and timestamps
     messages = re.split(pattern, data)[1:]
     dates = re.findall(pattern, data)
 
     df = pd.DataFrame({'user_message': messages, 'message_date': dates})
+    df['message_date'] = df['message_date'].str.replace('\u202F', ' ', regex=True).str.strip()
 
-    # Convert message_date column to string before applying .str functions
-    df['message_date'] = df['message_date'].astype(str).str.replace('\u202F', ' ', regex=True).str.strip()
+    try:
+        if am_pm_format:
+            df['message_date'] = pd.to_datetime(df['message_date'], format='%d/%m/%y, %I:%M %p - ', errors='coerce')
+        else:
+            df['message_date'] = pd.to_datetime(df['message_date'], format='%d/%m/%y, %H:%M - ', errors='coerce')
+    except Exception as e:
+        print(f"Error parsing dates: {e}")
+        return pd.DataFrame()
 
-    if am_pm_format:
-        df['message_date'] = pd.to_datetime(df['message_date'], format='%d/%m/%y, %I:%M %p - ', errors='coerce')
-    else:
-        df['message_date'] = pd.to_datetime(df['message_date'], format='%d/%m/%y, %H:%M - ', errors='coerce')
-
-    # Drop invalid date entries
-    df = df.dropna(subset=['message_date']).reset_index(drop=True)
+    df.dropna(subset=['message_date'], inplace=True)
     df.rename(columns={'message_date': 'date'}, inplace=True)
 
     # Extract user and message content
-    users = []
-    messages = []
+    users, messages = [], []
     for message in df['user_message']:
         entry = re.split(r'([\w\W]+?):\s', message, maxsplit=1)
         if len(entry) > 2:
@@ -59,6 +59,6 @@ def preprocess(data):
     df['minute'] = df['date'].dt.minute
 
     # Generate period column
-    df['period'] = df['hour'].apply(lambda h: f"{h:02d}-{(h+1)%24:02d}")
+    df['period'] = df['hour'].apply(lambda h: f"{h:02d}-{(h + 1) % 24:02d}")
 
     return df
