@@ -1,91 +1,194 @@
-# Streamlit App
 import streamlit as st
 import preprocessor, helper
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 import seaborn as sns
-import plotly.express as px
-import plotly.graph_objects as go
 
-st.set_page_config(page_title="WhatsApp Chat Analyzer", layout="wide")
-st.sidebar.title("\ud83d\udcca WhatsApp Chat Analyzer")
+plt.rcParams['axes.unicode_minus'] = False  # Avoids Unicode issues
+plt.rcParams['font.family'] = 'Segoe UI Emoji'  # Windows Emoji Font
 
-uploaded_file = st.sidebar.file_uploader("\ud83d\udcce Choose a WhatsApp Chat File")
-if uploaded_file:
-    data = uploaded_file.getvalue().decode("utf-8")
-    df = preprocessor.preprocess(data)
-    if df.empty:
-        st.error("Failed to parse the chat data. Ensure it's a valid exported WhatsApp chat file.")
-    else:
-        df['user'] = df['user'].fillna("Unknown")
-        user_list = sorted(df['user'].dropna().unique().tolist())
-        if 'group_notification' in user_list:
-            user_list.remove('group_notification')
+st.sidebar.title("Whatsapp Chat Analyzer")
+
+uploaded_file = st.sidebar.file_uploader("Choose a file")
+try:
+    if uploaded_file is not None:
+        bytes_data = uploaded_file.getvalue()
+        data = bytes_data.decode("utf-8")
+        df = preprocessor.preprocess(data)
+
+        # fetch unique users
+        user_list = df['user'].unique().tolist()
+        user_list.remove('group_notification')
+        user_list.sort()
         user_list.insert(0, "Overall")
 
-        selected_user = st.sidebar.selectbox("\ud83d\udc65 Analyze messages of", user_list)
-        if st.sidebar.button("\ud83d\udd0d Show Analysis"):
-            num_messages, words, num_media, num_links = helper.fetch_stats(selected_user, df)
-            st.markdown("## \ud83d\udcca Chat Statistics")
+        selected_user = st.sidebar.selectbox("Show analysis wrt", user_list)
+
+        if st.sidebar.button("Show Analysis"):
+
+            # Stats Area
+            num_messages, words, num_media_messages, num_links = helper.fetch_stats(selected_user, df)
+            st.title("Top Statistics")
             col1, col2, col3, col4 = st.columns(4)
-            col1.metric("💬 Total Messages", num_messages)
-            col2.metric("📝 Words", words)
-            col3.metric("📸 Media Shared", num_media)
-            col4.metric("🔗 Links Shared", num_links)
 
-            # Monthly Timeline
-            st.markdown("## 📅 Monthly Activity Timeline")
+            with col1:
+                st.markdown("### Total Messages")
+                st.markdown(f"## {num_messages}")
+            with col2:
+                st.markdown("### Total Words")
+                st.markdown(f"## {words}")
+            with col3:
+                st.markdown("### Media Shared")
+                st.markdown(f"## {num_media_messages}")
+            with col4:
+                st.markdown("### Links Shared")
+                st.markdown(f"## {num_links}")
+
+            # monthly timeline
+            st.title("Monthly Timeline")
             timeline = helper.monthly_timeline(selected_user, df)
-            if not timeline.empty:
-                fig = px.line(timeline, x='time', y='message', markers=True, template="plotly_dark")
-                st.plotly_chart(fig, use_container_width=True)
-            else:
-                st.warning("No data available.")
+            fig, ax = plt.subplots()
+            ax.plot(timeline['time'], timeline['message'], color = 'green')
+            plt.xticks(rotation='vertical')
+            st.pyplot(fig)
 
-            # Daily Trends
-            st.markdown("## 🗓 Daily Trends")
+            # daily timeline
+            st.title("Daily Timeline")
             daily_timeline = helper.daily_timeline(selected_user, df)
-            if not daily_timeline.empty:
-                fig = px.line(daily_timeline, x='only_date', y='message', markers=True, template="plotly_dark")
-                st.plotly_chart(fig, use_container_width=True)
-            else:
-                st.warning("No data available.")
+            fig, ax = plt.subplots()
+            ax.plot(daily_timeline['only_date'], daily_timeline['message'], color='black')
+            plt.xticks(rotation='vertical')
+            st.pyplot(fig)
 
-            # Most Active Users
+            # activity map
+            st.title("Activity Map")
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.header("Most busy day")
+                busy_day = helper.week_activity_map(selected_user, df)
+                fig, ax = plt.subplots()
+                ax.bar(busy_day.index, busy_day.values)
+                plt.xticks(rotation='vertical')
+                st.pyplot(fig)
+
+            with col2:
+                st.header("Most busy month")
+                busy_month = helper.month_activity_map(selected_user, df)
+                fig, ax = plt.subplots()
+                ax.bar(busy_month.index, busy_month.values, color = 'orange')
+                plt.xticks(rotation = 'vertical')
+                st.pyplot(fig)
+
+            st.title("Weekly Activity Map")
+            user_heat_map = helper.activity_heat_map(selected_user, df)
+            fig, ax = plt.subplots()
+            ax = sns.heatmap(user_heat_map)
+            st.pyplot(fig)
+
+
+            # finding the busiest user in the group(Group level)
             if selected_user == 'Overall':
-                st.markdown("## 🔥 Most Active Users")
+                st.title('Most Busy Users')
                 x, new_df = helper.most_busy_users(df)
-                if not x.empty:
-                    fig = px.bar(x.reset_index(), x='index', y=x.columns[0], color=x.columns[0], template="plotly_dark")
-                    st.plotly_chart(fig, use_container_width=True)
-                else:
-                    st.warning("No data available.")
+                fig, ax = plt.subplots()
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.dataframe(new_df)
+                with col2:
+                    ax.bar(x.index, x.values, color = 'red')
+                    plt.xticks(rotation = 'vertical')
+                    st.pyplot(fig)
 
             # Wordcloud
-            st.markdown("## ☁️ WordCloud")
+            st.title("Wordcloud")
             df_wc = helper.create_wordcloud(selected_user, df)
-            if df_wc is not None:
-                fig, ax = plt.subplots()
-                ax.imshow(df_wc, interpolation='bilinear')
-                ax.axis("off")
-                st.pyplot(fig, use_container_width=True)
-            else:
-                st.warning("No data available.")
+            fig, ax = plt.subplots()
+            ax.imshow(df_wc)
+            st.pyplot(fig)
 
-            # Emoji Analysis
-            st.markdown("## 😂 Emoji Analysis")
+            # most common words
+            most_common_df = helper.most_common_words(selected_user, df)
+
+            fig, ax = plt.subplots()
+            ax.barh(most_common_df[0], most_common_df[1])
+            plt.xticks(rotation = 'vertical')
+
+            st.title('Most common words')
+            st.pyplot(fig)
+
+            # emoji analysis
             emoji_df = helper.emoj_helper(selected_user, df)
-            if not emoji_df.empty:
-                fig = go.Figure(data=[go.Pie(labels=emoji_df[0], values=emoji_df[1], textinfo="label+percent")])
-                st.plotly_chart(fig, use_container_width=True)
-            else:
-                st.warning("No data available.")
+            st.title("Emoji Analysis")
+            col1, col2 = st.columns(2)
+            with col1:
+                st.dataframe(emoji_df)
+            # with col2:
+            #     fig,ax = plt.subplots()
+            #     ax.pie(emoji_df[1].head(), labels=emoji_df[0].head(), autopct="%0.2f")
+            #     st.pyplot(fig)
+            # Emoji Analysis
 
-            # Weekly Activity Heatmap
-            st.markdown("## 📆 Weekly Activity Heatmap")
-            heatmap = helper.activity_heat_map(selected_user, df)
-            if not heatmap.empty:
-                fig, ax = plt.subplots()
-                sns.heatmap(heatmap, cmap="mako", annot=False, linewidths=0, ax=ax)
+            with col2:
+                fig, ax = plt.subplots(figsize=(6, 6))
+
+                # Define Colors
+                colors = sns.color_palette("pastel")
+
+                # Creating Pie Chart
+                wedges, texts, autotexts = ax.pie(
+                    emoji_df[1].head(),
+                    labels=emoji_df[0].head(),
+                    autopct="%0.2f%%",
+                    colors=colors,
+                    textprops={'fontsize': 14},
+                    wedgeprops={'edgecolor': 'black'},
+                    pctdistance=0.85,
+                    shadow=True
+                )
+
+                # Adjust label size
+                for text in texts:
+                    text.set_fontsize(16)
+                    text.set_fontweight('bold')
+
+                for autotext in autotexts:
+                    autotext.set_fontsize(12)
+                    autotext.set_color('black')
+
+                ax.set_title("Top Used Emojis", fontsize=18, fontweight='bold', pad=20)
                 st.pyplot(fig)
-            else:
-                st.warning("No data available.")
+except:
+    if uploaded_file is not None:
+        bytes_data = uploaded_file.getvalue()
+        data = bytes_data.decode("utf-8")
+        df = preprocessor.preprocess(data)
+
+        # fetch unique users
+        user_list = df['user'].unique().tolist()
+        if (('group_notification') in user_list):
+            user_list.remove('group_notification')
+        user_list.sort()
+        user_list.insert(0, "Overall")
+        selected_user = st.sidebar.selectbox("Show analysis wrt", user_list)
+
+        if st.sidebar.button("Show Analysis"):
+            # Stats Area
+            num_messages, words, num_media_messages, num_links = helper.fetch_stats(selected_user, df)
+            st.title("Top Statistics")
+            col1, col2, col3, col4 = st.columns(4)
+
+            with col1:
+                st.markdown("### Total Messages")
+                st.markdown(f"## {num_messages}")
+            with col2:
+                st.markdown("### Total Words")
+                st.markdown(f"## {words}")
+            with col3:
+                st.markdown("### Media Shared")
+                st.markdown(f"## {num_media_messages}")
+            with col4:
+                st.markdown("### Links Shared")
+                st.markdown(f"## {num_links}")
+
+

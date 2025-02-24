@@ -1,0 +1,1315 @@
+17/11/23, 6:15 pm - Ayush Kadian created group "Aiml unofficial"
+17/11/23, 6:15 pm - You were added
+03/08/24, 1:08 pm - Divyansh Arora: https://www.amazon.in/MASTERING-PROMPT-ENGINEERING-Aryan-Rakheja-ebook/dp/B0CBNG3FVQ?dplnkId=1b798f7f-f8ef-4646-8f53-e6c2c6f51bb0
+06/08/24, 9:01 am - Divyam Mishra: https://colab.research.google.com/drive/1ODszmjk9D7_kP6BNCZ0GBJeBktni1NDA?usp=sharing
+06/08/24, 9:44 am - +91 95404 50222: import numpy as np 
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import LinearRegression
+np.random.seed(0)
+X=np.sort(5*np.random.rand(80,1),axis=0)
+Y=np.sin(X).ravel() + np.random.normal(0,0.2,X.shape[0])
+plt.plot(X,Y)
+06/08/24, 9:55 am - Ayush Kadian: This message was deleted
+09/08/24, 3:27 pm - Ayush Kadian: Ree ka result aa gya check kar lo
+09/08/24, 3:27 pm - Ayush Kadian: 2nd sem. Ki
+09/08/24, 4:06 pm - Harshit Pandey 2: Maths m kisi ka RLA show ho rha h?
+11/08/24, 6:44 pm - +91 93504 93727: This message was deleted
+11/08/24, 6:48 pm - +91 93504 93727: IAS SESHAN 👍
+
+#reels 
+#india 
+#government 
+#ias
+#politics 
+#edits
+https://www.instagram.com/reel/C-h6thEIWwF/?igsh=dTRmcXF4YjhxNDN1
+
+
+How is the edit ??
+12/08/24, 2:13 pm - +91 95404 50222: <Media omitted>
+16/08/24, 11:07 am - +91 82956 23396: This message was deleted
+21/08/24, 12:45 pm - Harsh Rao: Result agya h dekhlo
+21/08/24, 12:48 pm - Gaurav Gulati: This message was deleted
+21/08/24, 12:58 pm - Nishkarsh Maheshwari: Bhai phle hi hungama Mach chuka tha class m🤣
+21/08/24, 1:10 pm - Tanisha Dahiya: <Media omitted>
+21/08/24, 1:48 pm - Divyansh Arora: <Media omitted>
+21/08/24, 1:48 pm - Divyansh Arora: <Media omitted>
+21/08/24, 1:48 pm - Divyansh Arora: <Media omitted>
+21/08/24, 1:48 pm - Divyansh Arora: <Media omitted>
+21/08/24, 1:48 pm - Divyansh Arora: <Media omitted>
+21/08/24, 1:48 pm - Divyansh Arora: <Media omitted>
+25/08/24, 11:47 pm - Aryan Chhikara: Hod ki email id h kisi k pas?
+25/08/24, 11:48 pm - Khushii Kumari: hodit@ggnindia.dronacharya.info
+25/08/24, 11:48 pm - Aryan Chhikara: 👍🏻🙏🏻
+27/08/24, 9:28 am - Vishal Soni: https://colab.research.google.com/drive/1o4Ya4I_-vQOQNQ-tI4D5Tfkli3kdrBMu#scrollTo=uA2gN5Zo-122
+29/08/24, 9:23 am - Akshit Saluja: <Media omitted>
+29/08/24, 9:23 am - Akshit Saluja: <Media omitted>
+29/08/24, 9:23 am - Akshit Saluja: <Media omitted>
+29/08/24, 9:23 am - Akshit Saluja: <Media omitted>
+29/08/24, 9:23 am - Akshit Saluja: <Media omitted>
+29/08/24, 9:23 am - Akshit Saluja: <Media omitted>
+29/08/24, 9:23 am - Akshit Saluja: <Media omitted>
+29/08/24, 9:23 am - Akshit Saluja: <Media omitted>
+30/08/24, 11:23 am - +91 99106 03551: <Media omitted>
+04/09/24, 12:01 pm - Vishal Soni: <Media omitted>
+04/09/24, 1:07 pm - +91 99106 03551: <Media omitted>
+04/09/24, 1:07 pm - +91 99106 03551: <Media omitted>
+04/09/24, 1:07 pm - +91 99106 03551: <Media omitted>
+04/09/24, 1:07 pm - +91 99106 03551: <Media omitted>
+04/09/24, 10:42 pm - Vishal Soni: Kl clg kon jaa rha h ??
+04/09/24, 10:42 pm - Lakshay Choudhary: kya hua
+04/09/24, 10:42 pm - Dhairya Valecha: Matter
+04/09/24, 10:43 pm - Vishal Soni: Mera mouse syd clg m rh gya h
+04/09/24, 10:43 pm - Arjun Gupta: <Media omitted>
+04/09/24, 10:43 pm - Jiya Grover: Vishal mere pass h
+04/09/24, 10:44 pm - Dhairya Valecha: <Media omitted>
+04/09/24, 10:44 pm - Dhairya Valecha: Wowww very honest kid
+04/09/24, 10:46 pm - Vishal Soni: Haa bhai tere msg k just niche vaale ko 🧐
+04/09/24, 10:50 pm - Dhairya Valecha: Hawww personal hogaya ye to
+04/09/24, 10:52 pm - Jiya Grover: @919068737371 mouse leke dikhao ab😄
+04/09/24, 10:52 pm - Dhairya Valecha: <Media omitted>
+05/09/24, 9:33 am - +91 99106 03551: <Media omitted>
+05/09/24, 9:33 am - +91 99106 03551: Important Questions of Crypto currency
+06/09/24, 4:46 pm - Khushii Kumari: <Media omitted>
+06/09/24, 5:00 pm - Naman Gaur: Sab to detain h paper kon dega
+06/09/24, 5:00 pm - Harshit Thareja: hod, parveen
+06/09/24, 5:00 pm - Harshit Pandey 2: Hod
+06/09/24, 5:02 pm - +91 95712 62483: 50 percent balak
+06/09/24, 5:02 pm - +91 95712 62483: Denge paper
+06/09/24, 5:03 pm - Mohan Yadav: 65% Tak walo ko detain na kare
+HOD sai baat kare? <This message was edited>
+06/09/24, 5:03 pm - Harshit Pandey 2: Kar bhai
+06/09/24, 5:04 pm - Mohan Yadav: Official mai list dalne dai
+06/09/24, 5:04 pm - Harshit Pandey 2: Ye bhi boliyo % btaye sbki
+06/09/24, 5:13 pm - Naman Gaur: Bhai mam kehri h
+06/09/24, 5:13 pm - Piyush: Kya
+06/09/24, 5:13 pm - Naman Gaur: Ki Jo bache detained h unke sessional October m honge
+06/09/24, 5:13 pm - Piyush: Good baat h ye to 😂
+06/09/24, 5:14 pm - +91 95404 50222: Toh monday aana h kya unko?
+06/09/24, 5:14 pm - Naman Gaur: Nhi bhai 1 hafte ki chuti
+06/09/24, 5:14 pm - Harshit Pandey 2: 😘
+06/09/24, 5:56 pm - Ankit Tiwari: This message was deleted
+06/09/24, 5:56 pm - Harshit Thareja: 🤣🤣
+09/09/24, 10:10 am - Ayush Kadian: Sitting plan bhej do koi??
+09/09/24, 10:12 am - +91 95994 27963: <Media omitted>
+09/09/24, 10:13 am - +91 95994 27963: <Media omitted>
+09/09/24, 2:41 pm - Harsh Rao: Ooye ye assignment kya h mtlb question paper solve krke dene h?
+09/09/24, 2:42 pm - Ayush Kadian: Follow this link to join my WhatsApp group: https://chat.whatsapp.com/JvLN733taLS5bfRy8KiVK3
+09/09/24, 3:11 pm - Ansool Sharma: Hn
+09/09/24, 8:56 pm - Varun Sharma: Kisiko PA ka content mila youtube p ???
+10/09/24, 9:49 am - Ayush Kadian: ??
+10/09/24, 10:37 am - Lakshay Choudhary: Same ha
+10/09/24, 6:33 pm - Vishal Soni: Cwe k imp likhvaye the kya ?
+10/09/24, 6:33 pm - Vishal Soni: Agr likhvaye h to pls bhejna
+10/09/24, 6:33 pm - Kapil Yadav: Ha
+10/09/24, 6:33 pm - Vishal Soni: Bhejio bhai
+10/09/24, 6:33 pm - +91 98631 84207: This
+10/09/24, 6:33 pm - +91 99106 03551: <Media omitted>
+10/09/24, 6:34 pm - Kapil Yadav: Writing to meri hi h shyd 🙄🙄
+10/09/24, 6:34 pm - +91 99106 03551: This message was deleted
+10/09/24, 6:36 pm - Vishal Soni: Ye pdhna kha se h ye bhi btado notes vghre kuch ?
+10/09/24, 6:36 pm - +91 99106 03551: Ma'am ne notes bhej rakhe hai group mein
+10/09/24, 6:37 pm - Kapil Yadav: <Media omitted>
+10/09/24, 6:37 pm - Kapil Yadav: <Media omitted>
+10/09/24, 6:37 pm - Kapil Yadav: <Media omitted>
+10/09/24, 6:46 pm - Kapil Yadav: <Media omitted>
+11/09/24, 3:49 pm - Harshit Thareja: 3:00 p.m. heavy rain
+model accuracy : -999
+11/09/24, 7:45 pm - +91 98715 86017: https://youtube.com/@aiworkspaceone?si=gsC9jqlYc2ZiETBD
+11/09/24, 8:53 pm - Kapil Yadav: <Media omitted>
+11/09/24, 8:53 pm - Kapil Yadav: ML and its Application Notes :
+https://drive.google.com/drive/folders/1uDQAUo2p-Api-ECAkwSboH8lXhP629Sq?usp=sharing
+Also refer your class notes for unit 1 and unit 2
+11/09/24, 8:55 pm - Arjun Gupta: <Media omitted>
+11/09/24, 9:12 pm - Kapil Yadav: <Media omitted>
+11/09/24, 9:12 pm - Kapil Yadav: Parameters vs non parameters
+Bias/ variance , over / underfitting
+
+Steps in ml  method 
+Ml losses 
+
+Unit 2 data preparation
+Normalisation
+12/09/24, 1:50 pm - Vishal Soni: <Media omitted>
+12/09/24, 1:50 pm - Vishal Soni: <Media omitted>
+12/09/24, 1:53 pm - +91 98965 74212: This message was deleted
+12/09/24, 1:53 pm - +91 98965 74212: This message was deleted
+12/09/24, 1:54 pm - +91 98965 74212: <Media omitted>
+12/09/24, 1:54 pm - +91 98965 74212: <Media omitted>
+12/09/24, 1:54 pm - +91 98965 74212: <Media omitted>
+12/09/24, 1:56 pm - +91 98965 74212: <Media omitted>
+12/09/24, 1:56 pm - +91 98965 74212: <Media omitted>
+12/09/24, 7:03 pm - Kapil Yadav: <Media omitted>
+12/09/24, 7:03 pm - Kapil Yadav: <Media omitted>
+12/09/24, 7:04 pm - Kapil Yadav: Part 2 
+Unit 1
+12/09/24, 7:04 pm - Kapil Yadav: Part 1 unit 1
+12/09/24, 7:06 pm - Kapil Yadav: <Media omitted>
+12/09/24, 7:06 pm - Kapil Yadav: <Media omitted>
+12/09/24, 7:06 pm - Kapil Yadav: <Media omitted>
+12/09/24, 7:07 pm - Kapil Yadav: Unit 2 part 1
+12/09/24, 7:08 pm - Kapil Yadav: <Media omitted>
+12/09/24, 7:08 pm - Kapil Yadav: Part 2 unit 2
+13/09/24, 12:11 pm - +91 70919 27077: <Media omitted>
+13/09/24, 12:11 pm - +91 70919 27077: <Media omitted>
+13/09/24, 12:12 pm - Vishesh Singh Rawat: This message was deleted
+13/09/24, 12:12 pm - Vishesh Singh Rawat: This message was deleted
+14/09/24, 9:06 pm - Harsh Rao: Baki h ?
+14/09/24, 9:06 pm - Harsh Rao: Fla , pa , ke alawa kre kisine?
+14/09/24, 9:06 pm - Harsh Rao: Kre ho to bhejdena
+15/09/24, 3:03 pm - Harsh Rao: Kisine 2 se jada ni kre?????
+15/09/24, 6:07 pm - Harsh Rao: Bc kisine ni kra kya
+15/09/24, 6:08 pm - Harsh Rao: Ni krre submit to btado m bhi ni krta fir
+15/09/24, 6:11 pm - Harshit Pandey 2: Krle bhai ,sab kr rahe h
+15/09/24, 6:15 pm - Harsh Rao: Acha btw ye karwake madam no deti h kya? Ya faltu m karwari h
+15/09/24, 6:16 pm - Harshit Pandey 2: 1st time h mera bhi🤣
+15/09/24, 6:16 pm - +91 95404 50222: +1
+15/09/24, 10:36 pm - Mayank Tanwar: <Media omitted>
+16/09/24, 8:49 am - Ayush Kadian changed this group's icon
+16/09/24, 11:37 am - Nishkarsh Maheshwari: <Media omitted>
+19/09/24, 7:13 am - +91 98715 86017: Kisi ka jhankar college me centre hai kya nptel ka
+20/09/24, 1:56 pm - Vishal Soni: *MNC EXAMINATION 2024* 
+  
+*Collaboration with Microsoft,IBM, CISCO,META and TCS*
+
+
+       *Join immediately* 
+
+
+Follow this link to join my WhatsApp group: 
+
+https://chat.whatsapp.com/DYWfr7mW8zZBKkx3Yh84Me
+21/09/24, 9:45 pm - Gaurav Gulati: https://bvphex.devfolio.co/
+26/09/24, 6:47 pm - +91 93504 93727: https://www.instagram.com/reel/DAYYhoWIoKX/?igsh=MTdncXNuemFkM3Fidg==
+01/10/24, 7:25 pm - +91 93504 93727: "Turning ideas into motion magic ✨ #AfterEffects"
+https://www.instagram.com/reel/DAlXTyIotrG/?igsh=NGh3cnFxMjMxeXF1
+03/10/24, 1:28 pm - +91 95404 50222: To find the reduced grammar, we need to perform the following steps:
+
+1. **Eliminate unreachable symbols**: Remove any non-terminal symbols that cannot be reached from the start symbol \( S \).
+
+2. **Eliminate non-productive symbols**: Remove non-terminals that do not derive any terminal string.
+
+3. **Eliminate unit productions**: Remove productions of the form \( A \to B \) where both \( A \) and \( B \) are non-terminals.
+
+4. **Eliminate useless symbols**: Remove symbols that don't appear in any derivation of terminal strings.
+
+Let's go through these steps for the given grammar:
+
+### Original Grammar
+
+1. \( S \to aAa \)
+2. \( A \to bBB \)
+3. \( B \to ab \)
+4. \( C \to aB \)
+
+### Step 1: Eliminate unreachable symbols
+We start from \( S \). The reachable symbols are those that can be reached starting from \( S \).
+
+- From \( S \), we can reach \( A \) (from \( S \to aAa \)).
+- From \( A \), we can reach \( B \) (from \( A \to bBB \)).
+- From \( B \), no new symbols are introduced.
+
+The non-terminal \( C \) is not reachable from \( S \), so we can remove it.
+
+### Step 2: Eliminate non-productive symbols
+A non-terminal is productive if it can eventually derive a string of terminals.
+
+- \( B \to ab \), so \( B \) is productive (it directly derives terminals).
+- \( A \to bBB \), and since \( B \) is productive, \( A \) is also productive.
+- \( S \to aAa \), and since \( A \) is productive, \( S \) is also productive.
+
+Since all remaining non-terminals are productive, no further eliminations are needed.
+
+### Step 3: Eliminate unit productions
+There are no unit productions in the current grammar (all productions involve a mix of terminals and non-terminals), so no changes are needed here.
+
+### Step 4: Eliminate useless symbols
+All remaining non-terminals \( S \), \( A \), and \( B \) are useful because they either derive terminals or are part of a derivation leading to terminals.
+
+### Final Reduced Grammar
+After eliminating unreachable and useless symbols, the reduced grammar is:
+
+1. \( S \to aAa \)
+2. \( A \to bBB \)
+3. \( B \to ab \)
+
+Thus, the reduced grammar consists of the above three production rules.
+04/10/24, 6:32 pm - +91 93504 93727: This message was deleted
+04/10/24, 6:33 pm - +91 93504 93727: https://www.instagram.com/reel/DAs8h8sT8gF/?igsh=ZDYza2Fuamt0ZjZr
+07/10/24, 10:32 am - Pratishtha Gupta: To remove useless symbols from a context-free grammar (CFG), we follow these steps:
+
+Remove non-generating symbols: These are symbols that do not eventually lead to terminal symbols.
+Remove unreachable symbols: These are symbols that cannot be reached from the start symbol.
+Step 1: Find Generating Symbols
+We need to identify which non-terminals produce strings of terminal symbols.
+
+Terminal symbols: {a, b}
+Non-terminal symbols: {S, A, B, C, D}
+Let's start with the rules:
+
+A:
+
+A -> aAb: Not generating (depends on itself).
+A -> bAa: Not generating (depends on itself).
+A -> a: Generating (directly generates terminal).
+So, A is generating.
+
+B:
+
+B -> bbA: Generating, since A is generating.
+B -> aaB: Not generating (depends on itself).
+B -> AB: Not generating (depends on itself).
+So, B is generating.
+
+C:
+
+C -> abCA: Not generating (depends on itself).
+C -> aDb: Not generating because D hasn't been proven generating yet.
+C -> aC: Not generating (depends on itself).
+So, C is not generating.
+
+D has no rules that lead to terminal symbols, so D is not generating.
+
+Now, we know that only A and B are generating.
+
+Step 2: Remove Non-Generating Rules
+Remove all non-terminals and their associated rules that are not generating (C and D).
+
+Revised CFG:
+
+𝑆
+→
+𝐴
+𝐵
+S→AB
+𝐴
+→
+𝑎
+𝐴
+𝑏
+∣
+𝑏
+𝐴
+𝑎
+∣
+𝑎
+A→aAb∣bAa∣a
+𝐵
+→
+𝑏
+𝑏
+𝐴
+B→bbA
+Step 3: Remove Unreachable Symbols
+Now, let's check if all remaining symbols are reachable from the start symbol 
+𝑆
+S.
+
+From 
+𝑆
+S, we can reach A and B.
+From B, we can reach A.
+From A, we can only reach terminals or itself.
+So, all symbols in the current CFG are reachable.
+
+Final CFG:
+𝑆
+→
+𝐴
+𝐵
+S→AB
+𝐴
+→
+𝑎
+𝐴
+𝑏
+∣
+𝑏
+𝐴
+𝑎
+∣
+𝑎
+A→aAb∣bAa∣a
+𝐵
+→
+𝑏
+𝑏
+𝐴
+B→bbA
+This is the simplified CFG with useless symbols removed.
+
+
+
+
+
+
+You said:
+Convert CFG to CNN:
+S->ABA
+A->aA/€
+B-> bB/€
+ChatGPT said:
+ChatGPT
+To convert a context-free grammar (CFG) to Chomsky Normal Form (CNF), we must follow a few steps. CNF requires that:
+
+Each production is of the form 
+𝐴
+→
+𝐵
+𝐶
+A→BC (where 
+𝐴
+,
+𝐵
+,
+𝐶
+A,B,C are non-terminals), or
+Each production is of the form 
+𝐴
+→
+𝑎
+A→a (where 
+𝑎
+a is a terminal), or
+The start symbol can derive 
+𝜖
+ϵ if it is the only symbol producing 
+𝜖
+ϵ.
+Given CFG:
+
+𝑆
+→
+𝐴
+𝐵
+𝐴
+S→ABA
+𝐴
+→
+𝑎
+𝐴
+∣
+𝜖
+A→aA∣ϵ
+𝐵
+→
+𝑏
+𝐵
+∣
+𝜖
+B→bB∣ϵ
+Step 1: Eliminate 
+𝜖
+ϵ-productions
+We have 
+𝐴
+→
+𝜖
+A→ϵ and 
+𝐵
+→
+𝜖
+B→ϵ. We need to modify the grammar to remove 
+𝜖
+ϵ-productions by including optionality in any place where 
+𝐴
+A and 
+𝐵
+B appear.
+
+For 
+𝑆
+→
+𝐴
+𝐵
+𝐴
+S→ABA:
+
+𝑆
+→
+𝐴
+𝐵
+𝐴
+S→ABA stays.
+If we remove 
+𝐴
+A, we get 
+𝑆
+→
+𝐵
+𝐴
+S→BA, 
+𝑆
+→
+𝐴
+𝐵
+S→AB, and 
+𝑆
+→
+𝐵
+S→B.
+If we remove 
+𝐵
+B, we get 
+𝑆
+→
+𝐴
+𝐴
+S→AA, and 
+𝑆
+→
+𝐴
+S→A.
+If we remove both 
+𝐴
+A and 
+𝐵
+B, we get 
+𝑆
+→
+𝜖
+S→ϵ.
+So, for 
+𝑆
+S, we have:
+𝑆
+→
+𝐴
+𝐵
+𝐴
+∣
+𝐴
+𝐵
+∣
+𝐵
+𝐴
+∣
+𝐴
+𝐴
+∣
+𝐴
+∣
+𝐵
+∣
+𝜖
+S→ABA∣AB∣BA∣AA∣A∣B∣ϵ
+For 
+𝐴
+→
+𝑎
+𝐴
+∣
+𝜖
+A→aA∣ϵ, we only have to remove the 
+𝜖
+ϵ-production, but we leave 
+𝐴
+→
+𝑎
+𝐴
+A→aA as is.
+
+For 
+𝐵
+→
+𝑏
+𝐵
+∣
+𝜖
+B→bB∣ϵ, similarly, we remove the 
+𝜖
+ϵ-production, leaving 
+𝐵
+→
+𝑏
+𝐵
+B→bB.
+
+Step 2: Eliminate unit productions
+There are no unit productions in the grammar (i.e., productions of the form 
+𝐴
+→
+𝐵
+A→B), so we skip this step.
+
+Step 3: Ensure all productions are in CNF form
+Now, we need to ensure that the productions are in the form 
+𝐴
+→
+𝐵
+𝐶
+A→BC or 
+𝐴
+→
+𝑎
+A→a.
+
+𝑆
+→
+𝐴
+𝐵
+𝐴
+S→ABA: This is not in CNF. We need to break it down into binary steps.
+
+Introduce new variables, say 
+𝑋
+1
+X 
+1
+​
+  and 
+𝑋
+2
+X 
+2
+​
+ , such that:
+𝑆
+→
+𝑋
+1
+𝐴
+,
+𝑋
+1
+→
+𝐴
+𝐵
+S→X 
+1
+​
+ A,X 
+1
+​
+ →AB
+So now 
+𝑆
+→
+𝑋
+1
+𝐴
+S→X 
+1
+​
+ A and 
+𝑋
+1
+→
+𝐴
+𝐵
+X 
+1
+​
+ →AB are in CNF form.
+𝑆
+→
+𝐴
+𝐵
+,
+𝐵
+𝐴
+,
+𝐴
+𝐴
+,
+𝐴
+,
+𝐵
+S→AB,BA,AA,A,B: These can all be rewritten.
+
+For 
+𝑆
+→
+𝐴
+𝐵
+S→AB, 
+𝑆
+→
+𝐵
+𝐴
+S→BA, and 
+𝑆
+→
+𝐴
+𝐴
+S→AA, they are already in binary form, so they are valid in CNF.
+For 
+𝑆
+→
+𝐴
+S→A and 
+𝑆
+→
+𝐵
+S→B, we will remove these as they are not in CNF (but we'll ensure that 
+𝑆
+S has proper alternatives).
+𝐴
+→
+𝑎
+𝐴
+A→aA: This is not in CNF, so we need to introduce a new variable for the terminal 
+𝑎
+a, say 
+𝑋
+𝑎
+X 
+a
+​
+ , where 
+𝑋
+𝑎
+→
+𝑎
+X 
+a
+​
+ →a, and then rewrite:
+
+𝐴
+→
+𝑋
+𝑎
+𝐴
+A→X 
+a
+​
+ A
+𝐵
+→
+𝑏
+𝐵
+B→bB: Similarly, introduce 
+𝑋
+𝑏
+X 
+b
+​
+ , where 
+𝑋
+𝑏
+→
+𝑏
+X 
+b
+​
+ →b, and rewrite:
+
+𝐵
+→
+𝑋
+𝑏
+𝐵
+B→X 
+b
+​
+ B
+Final Grammar in CNF
+The final grammar, in CNF, is:
+
+𝑆
+→
+𝑋
+1
+𝐴
+∣
+𝐴
+𝐵
+∣
+𝐵
+𝐴
+∣
+𝐴
+𝐴
+S→X 
+1
+​
+ A∣AB∣BA∣AA
+𝑋
+1
+→
+𝐴
+𝐵
+X 
+1
+​
+ →AB
+𝐴
+→
+𝑋
+𝑎
+𝐴
+∣
+𝜖
+A→X 
+a
+​
+ A∣ϵ
+𝐵
+→
+𝑋
+𝑏
+𝐵
+∣
+𝜖
+B→X 
+b
+​
+ B∣ϵ
+𝑋
+𝑎
+→
+𝑎
+X 
+a
+​
+ →a
+𝑋
+𝑏
+→
+𝑏
+X 
+b
+​
+ →b
+This is the equivalent Chomsky Normal Form (CNF) for the given CFG.
+
+
+
+
+
+
+You said:
+Convert grammar into GNF: 
+S->AA/0
+A->SS/1
+ChatGPT said:
+ChatGPT
+Greibach Normal Form (GNF) requires that each production rule must have the form:
+
+𝐴
+→
+𝑎
+𝛼
+A→aα
+Where:
+
+𝑎
+a is a terminal.
+𝛼
+α is a (possibly empty) string of non-terminals.
+Given the grammar:
+
+𝑆
+→
+𝐴
+𝐴
+∣
+0
+S→AA∣0
+𝐴
+→
+𝑆
+𝑆
+∣
+1
+A→SS∣1
+We will now convert this into GNF. Here's how:
+
+Step 1: Ensure the grammar doesn't have left recursion.
+The GNF conversion process requires eliminating any left recursion. In this case, the rules as given do not directly show left recursion, but we'll check as we proceed.
+
+Step 2: Modify rules to fit the GNF form.
+GNF requires that the right-hand side starts with a terminal. So, let's start processing the grammar:
+
+Processing 
+𝑆
+→
+𝐴
+𝐴
+S→AA
+𝑆
+→
+𝐴
+𝐴
+S→AA is not in GNF because it starts with a non-terminal. We need to rewrite this by replacing non-terminals with valid GNF forms, starting with 
+𝐴
+A.
+Substituting 
+𝐴
+A in 
+𝑆
+→
+𝐴
+𝐴
+S→AA
+𝐴
+→
+1
+A→1 and 
+𝐴
+→
+𝑆
+𝑆
+A→SS.
+So for 
+𝑆
+→
+𝐴
+𝐴
+S→AA, we need to substitute for 
+𝐴
+A in both instances:
+𝑆
+→
+(
+𝑆
+𝑆
+∣
+1
+)
+(
+𝑆
+𝑆
+∣
+1
+)
+S→(SS∣1)(SS∣1)
+Expanding this gives:
+𝑆
+→
+𝑆
+𝑆
+𝑆
+𝑆
+∣
+𝑆
+𝑆
+1
+∣
+1
+𝑆
+𝑆
+∣
+11
+S→SSSS∣SS1∣1SS∣11
+However, this is still not in GNF form because each production must start with a terminal.
+
+Processing 
+𝑆
+→
+0
+S→0
+𝑆
+→
+0
+S→0 is already in GNF form because it starts with a terminal (0).
+Processing 
+𝐴
+→
+𝑆
+𝑆
+A→SS
+𝐴
+→
+𝑆
+𝑆
+A→SS is not in GNF. So, we substitute 
+𝑆
+S in this production as well, using the options we have for 
+𝑆
+S:
+𝐴
+→
+(
+𝐴
+𝐴
+∣
+0
+)
+(
+𝐴
+𝐴
+∣
+0
+)
+A→(AA∣0)(AA∣0)
+Expanding this gives:
+𝐴
+→
+𝐴
+𝐴
+𝐴
+𝐴
+∣
+𝐴
+𝐴
+0
+∣
+0
+𝐴
+𝐴
+∣
+00
+A→AAAA∣AA0∣0AA∣00
+Again, this is not in GNF.
+Processing 
+𝐴
+→
+1
+A→1
+𝐴
+→
+1
+A→1 is already in GNF, as it starts with a terminal.
+Step 3: Final GNF Productions
+Now, we'll ensure all productions start with terminals. Let’s rewrite everything in a GNF format:
+
+𝑆
+→
+0
+S→0 (already in GNF)
+𝐴
+→
+1
+A→1 (already in GNF)
+For the productions that are not in GNF, such as 
+𝑆
+→
+𝑆
+𝑆
+𝑆
+𝑆
+S→SSSS, we introduce new variables to break down the steps:
+
+Introduce new variables for every non-terminal string so that the terminal can start the production.
+Final Grammar in GNF
+After applying substitutions and ensuring that each production starts with a terminal, we will have a more structured form. However, manually solving large productions would involve recursive substitution for each non-terminal in every right-hand side until all forms are in GNF.
+
+Let me know if you'd like the detailed manual resolution or if I should proceed with a more precise breakdown for these substitutions.
+07/10/24, 10:34 am - +91 95404 50222: https://chatgpt.com/c/670368e6-5b60-8011-91d5-7e67c549d0ea
+07/10/24, 10:39 am - +91 95404 50222: https://chatgpt.com/c/670368e6-5b60-8011-91d5-7e67c549d0ea
+11/10/24, 10:44 am - Ayush Kadian: <Media omitted>
+11/10/24, 10:44 am - Ayush Kadian: <Media omitted>
+11/10/24, 11:25 am - Karan Singh: <Media omitted>
+15/10/24, 10:42 am - Divyam Mishra: https://colab.research.google.com/drive/10vGY_30M6MI1BE53HyQky3ChpRyrC_04?usp=sharing
+18/10/24, 7:26 pm - Mayank Bhardwaj: Kal collage hai ya nahi
+18/10/24, 7:32 pm - Harshit Pandey 2: Nahi
+18/10/24, 7:39 pm - Ayush Kadian: Kal compulsory nhi h
+21/10/24, 1:05 pm - Abhishek Saini: <Media omitted>
+21/10/24, 1:06 pm - Abhishek Saini: This message was deleted
+23/10/24, 1:34 pm - +91 95404 50222: This message was deleted
+23/10/24, 1:34 pm - +91 95404 50222: <Media omitted>
+23/10/24, 2:12 pm - Gaurav Gulati: <Media omitted>
+23/10/24, 2:13 pm - Harshit Pandey 2: <Media omitted>
+23/10/24, 2:13 pm - Mayank Tanwar: <Media omitted>
+23/10/24, 2:14 pm - Dhairya Valecha: <Media omitted>
+23/10/24, 2:14 pm - Samay Pawar: <Media omitted>
+23/10/24, 2:16 pm - Nishkarsh Maheshwari: <Media omitted>
+23/10/24, 2:17 pm - +91 88822 32488: <Media omitted>
+23/10/24, 2:23 pm - Harshit Thareja: fir ranking ke time pe experience me ghaplebaaji krte hai ye
+29/10/24, 6:52 pm - Harshit Pandey 2: This message was deleted
+29/10/24, 6:52 pm - Harshit Pandey 2: This message was deleted
+31/10/24, 11:58 am - Dhairya Valecha: <Media omitted>
+31/10/24, 11:59 am - Vishal Soni: Happy diwali guyss ✨
+31/10/24, 11:59 am - Ayush Kadian: <Media omitted>
+31/10/24, 12:05 pm - Tanisha Dahiya: <Media omitted>
+31/10/24, 12:06 pm - Mayank Tanwar: <Media omitted>
+31/10/24, 12:36 pm - Gaurav Gulati: @917982760024 🫦🫦
+31/10/24, 12:36 pm - Harshit Thareja: <Media omitted>
+31/10/24, 12:37 pm - Gaurav Gulati: <Media omitted>
+31/10/24, 12:38 pm - Harshit Thareja: <Media omitted>
+31/10/24, 2:27 pm - Dhairya Valecha: <Media omitted>
+01/11/24, 11:58 am - Dhairya Valecha: <Media omitted>
+01/11/24, 11:58 am - Dhairya Valecha: @917982760024 copyright strike mat maariyo 😘😘
+01/11/24, 11:59 am - Harshit Thareja: bhai copyright to nahi maaruga lekin jay haryana ke peeche fool aur diye to hatadeta
+01/11/24, 12:00 pm - Dhairya Valecha: Itni mehnat ni hoti bhai 😂
+01/11/24, 12:01 pm - Harshit Thareja: mere se bhi copyright maarne ki mehanat nahi hoti bhai 😂
+04/11/24, 10:26 am - Naman Gaur: Bhai kisi n ml ka assignment kya ho to bhej do
+04/11/24, 1:23 pm - +91 99106 03551: This message was deleted
+04/11/24, 1:35 pm - Divyansh Arora: <Media omitted>
+06/11/24, 10:26 pm - Divyam Mishra: <Media omitted>
+06/11/24, 10:26 pm - Divyam Mishra: <Media omitted>
+08/11/24, 9:44 am - Karan Singh: <Media omitted>
+08/11/24, 9:44 am - Karan Singh: <Media omitted>
+08/11/24, 12:02 pm - Vishal Soni: *FINAL REGISTRATION GOOGLE FORM FOR DRONACHARYA COLLEGE OF ENGINEERING STUDENTS*
+
+Opportunity to register for the direct MNC Specialization exam and get certified with the chosen company 
+
+*EVERYONE FILL THE FORM TO GET REGISTRATION PROCESS OF EXAM REGISTRATION*
+
+Last date for the confirmation of slot 07-11-2024
+
+Fill the form immediately
+
+https://forms.gle/m4g21Zy3gCWWhq4b6
+10/11/24, 6:28 pm - Harsh Rao: Guys hmare subject h kitne total?
+10/11/24, 6:28 pm - Harsh Rao: <Media omitted>
+10/11/24, 6:28 pm - Harsh Rao: 8?
+10/11/24, 6:29 pm - +91 99106 03551: Nahi, 6 hai
+10/11/24, 8:31 pm - +91 98715 86017: Web to hat gaya hai shayad
+10/11/24, 9:30 pm - Dhairya Valecha: Mujhe bhi lagta hai aisa
+10/11/24, 9:31 pm - +91 99106 03551: WEb technology hat chuka hai
+10/11/24, 9:31 pm - +91 99106 03551: Uski jagah Software Engineering Subject hai
+10/11/24, 9:31 pm - Dhairya Valecha: Thank you Shruti batane ke liye 🙂🙂
+10/11/24, 9:32 pm - +91 99106 03551: Anytime Dhairya 😊
+10/11/24, 9:44 pm - Harsh Rao: Hann whi confusion thi
+11/11/24, 9:24 am - +91 98715 86017: <Media omitted>
+11/11/24, 9:54 am - Divyansh Arora: <Media omitted>
+13/11/24, 2:50 pm - +91 99106 03551: <Media omitted>
+13/11/24, 2:50 pm - +91 99106 03551: <Media omitted>
+13/11/24, 2:50 pm - +91 99106 03551: This is the updated BDA file
+13/11/24, 2:56 pm - Harshit Thareja: You deleted this message
+13/11/24, 2:57 pm - Gaurav Gulati: haw harshit
+13/11/24, 2:57 pm - Gaurav Gulati: what is this behaviour
+13/11/24, 2:59 pm - +91 80108 68597: Sheesh bhai
+14/11/24, 2:30 pm - +91 99106 03551: <Media omitted>
+14/11/24, 2:30 pm - +91 99106 03551: <Media omitted>
+14/11/24, 2:31 pm - +91 99106 03551: This message was deleted
+17/11/24, 11:56 pm - +91 99106 03551: Coloured printout of first page and output page 
+Spiral Binding required
+17/11/24, 11:56 pm - +91 99106 03551: <Media omitted>
+18/11/24, 9:52 am - Kapil Yadav: <Media omitted>
+18/11/24, 9:52 am - +91 98631 84207: Do u have se test questions given on board by maam
+18/11/24, 9:53 am - +91 98631 84207: @918595995023
+18/11/24, 9:53 am - +91 98631 84207: Anyone who has
+18/11/24, 11:20 am - Divyansh Arora: No bro
+18/11/24, 6:35 pm - Kapil Yadav: <Media omitted>
+19/11/24, 10:59 am - Divyam Mishra: <Media omitted>
+20/11/24, 12:12 pm - +91 70919 27077: This message was deleted
+20/11/24, 12:21 pm - +91 70919 27077: <Media omitted>
+21/11/24, 9:14 am - Nishkarsh Maheshwari: <Media omitted>
+21/11/24, 9:14 am - Nishkarsh Maheshwari: <Media omitted>
+21/11/24, 9:14 am - +91 81307 70421: This message was deleted
+21/11/24, 9:14 am - Nishkarsh Maheshwari: <Media omitted>
+21/11/24, 9:14 am - +91 81307 70421: This message was deleted
+21/11/24, 9:46 pm - Harshit Pandey 2: Fla k notes bhej do
+21/11/24, 9:51 pm - Gaurav Gulati: .
+23/11/24, 7:05 pm - +91 99106 03551: <Media omitted>
+23/11/24, 7:06 pm - +91 99106 03551: This is the updated index page of BDA file
+23/11/24, 7:06 pm - Gaurav Gulati: thanks for updating
+23/11/24, 7:06 pm - Kapil Yadav: Ab to nikalwa li
+23/11/24, 7:06 pm - +91 99106 03551: Please make this change
+23/11/24, 7:06 pm - +91 99106 03551: Koi baat nahi
+23/11/24, 7:06 pm - +91 99106 03551: Print nikalke usi ke upar paste kar dena
+23/11/24, 7:06 pm - +91 99106 03551: Sir ne kaha hai jinhone bhi print out karwa liya
+23/11/24, 7:07 pm - +91 99106 03551: Anytime Gaurav
+24/11/24, 6:15 am - Kapil Yadav: <Media omitted>
+24/11/24, 10:48 am - Harshit Pandey 2: Syllabus h kisi pr crypto ka?
+24/11/24, 10:48 am - Rahul Kumar: <Media omitted>
+24/11/24, 10:48 am - Gaurav Gulati: This message was deleted
+24/11/24, 10:49 am - Harshit Pandey 2: <Media omitted>
+26/11/24, 11:21 am - Kapil Yadav: <Media omitted>
+26/11/24, 11:21 am - Kapil Yadav: <Media omitted>
+26/11/24, 11:22 am - Kapil Yadav: <Media omitted>
+26/11/24, 11:22 am - Kapil Yadav: <Media omitted>
+26/11/24, 11:22 am - Kapil Yadav: <Media omitted>
+26/11/24, 11:22 am - Kapil Yadav: <Media omitted>
+26/11/24, 11:24 am - Kapil Yadav: https://chatgpt.com/share/6745628a-d0b4-8002-9894-e0fa4433ba42
+26/11/24, 11:24 am - Kapil Yadav: https://chatgpt.com/share/6745629f-2ac4-8002-8903-dd25a0af9be7
+28/11/24, 3:52 pm - +91 95994 27963: Follow this link to join my WhatsApp group: https://chat.whatsapp.com/HW1MuFLrQDjCuGrk457vt4
+29/11/24, 1:30 pm - Mayank Tanwar: <Media omitted>
+29/11/24, 1:30 pm - Mayank Tanwar: <Media omitted>
+29/11/24, 6:35 pm - +91 93540 94040: SE ka syllabus h kisi k paas
+29/11/24, 6:35 pm - +91 70919 27077: <Media omitted>
+29/11/24, 6:35 pm - Mayank Tanwar: Notes bhi
+29/11/24, 6:36 pm - Kapil Yadav: <Media omitted>
+29/11/24, 6:36 pm - Kapil Yadav: <Media omitted>
+29/11/24, 6:36 pm - Kapil Yadav: <Media omitted>
+29/11/24, 6:36 pm - Kapil Yadav: <Media omitted>
+29/11/24, 6:39 pm - +91 93540 94040: <Media omitted>
+29/11/24, 6:43 pm - +91 96677 03572: This message was deleted
+29/11/24, 7:53 pm - Mayank Tanwar: <Media omitted>
+29/11/24, 8:03 pm - +91 99106 03551: This message was deleted
+29/11/24, 8:04 pm - Harshit Pandey 2: <Media omitted>
+29/11/24, 8:05 pm - +91 99106 03551: <Media omitted>
+29/11/24, 8:05 pm - +91 99106 03551: Yeh dekhlo
+29/11/24, 8:06 pm - Harshit Pandey 2: Ye important k naam pr pura syllabus likha hua h
+29/11/24, 8:06 pm - +91 99106 03551: Ma'am ne yehi bheje hai
+29/11/24, 8:25 pm - Mayank Tanwar: galti se syllabus bhejdiya ig
+09/12/24, 9:43 am - +91 98631 84207: <Media omitted>
+09/12/24, 9:32 pm - Tanisha Dahiya: Main datesheet
+09/12/24, 9:32 pm - Tanisha Dahiya: Agyi ??
+11/12/24, 12:51 pm - +91 99106 03551: <Media omitted>
+11/12/24, 1:00 pm - Tanisha Dahiya: Likh ke bhjde kiss day konsa h
+11/12/24, 1:01 pm - +91 99106 03551: 28 - ML
+31 - BDA/SE
+04 - PA
+07 - CWE
+13 - FLA <This message was edited>
+11/12/24, 1:02 pm - Tanisha Dahiya: Ek subject or
+11/12/24, 1:02 pm - Tanisha Dahiya: Han do paper ek
+11/12/24, 1:02 pm - Tanisha Dahiya: Din
+11/12/24, 1:03 pm - +91 99106 03551: Khud shock hui hu yeh dekhke
+11/12/24, 1:04 pm - Tanisha Dahiya: Han change hojygi koi na
+11/12/24, 1:06 pm - +91 99106 03551: College aake admit card lena padega GU ki site pe nahi milega
+11/12/24, 1:06 pm - +91 99106 03551: No dues form dene ke baad
+11/12/24, 1:11 pm - Harshit Thareja: bhai dono exams morning shift me kaise ho sakte hai
+11/12/24, 1:12 pm - Harshit Thareja: <Media omitted>
+11/12/24, 1:12 pm - Harshit Thareja: aise?
+11/12/24, 1:12 pm - Yashender Joshi: Hein... Koi to glt hi datesheet bhej rhaa hein..
+11/12/24, 1:13 pm - Gaurav Gulati: new year celebration at 31st
+11/12/24, 1:13 pm - Gaurav Gulati: 2 exams
+11/12/24, 1:13 pm - Yashender Joshi: 🤕🤕
+11/12/24, 2:18 pm - Harsh Rao: This message was deleted
+11/12/24, 2:18 pm - Mayank Tanwar: <Media omitted>
+11/12/24, 2:26 pm - Harshit Thareja: You deleted this message
+11/12/24, 2:27 pm - +91 80108 68597: Harshit bhai basssss
+11/12/24, 2:27 pm - Harshit Thareja: kunal bhai ok
+11/12/24, 4:38 pm - Mayank Bhardwaj: Kiss day toh Feb main hai
+13/12/24, 11:49 am - Ansool Sharma: Rohit aur prathistha tum dono ne sheet pe sign nahi kia
+13/12/24, 11:49 am - Ansool Sharma: Class m aake sign kardo
+18/12/24, 8:21 pm - Divyansh Arora: <Media omitted>
+18/12/24, 8:25 pm - Harshit Pandey 2: Likh do koi new datesheet
+18/12/24, 8:26 pm - +91 99106 03551: 28 - ML
+31 - BDA
+04 - PA
+07 - CWE
+13 - FLA
+16 - SE
+18/12/24, 8:26 pm - Harsh Rao: 31 -se
+18/12/24, 8:27 pm - Harsh Rao: Se bda dono?
+18/12/24, 8:27 pm - Aryan Dabas: Focus on this
+18/12/24, 8:27 pm - Aryan Dabas: Nothing else
+18/12/24, 8:27 pm - Harsh Rao: ?
+18/12/24, 8:27 pm - Aryan Dabas: 16 ko hai SE
+18/12/24, 8:28 pm - Harshit Pandey 2: ✅
+20/12/24, 7:25 pm - +91 93504 93727: https://www.instagram.com/reel/DDy0BoGSIEO/?igsh=cjh6bHdoaXhqNnRq
+20/12/24, 7:59 pm - Mayank Bhardwaj: Kisi ki AI main re hai kya
+24/12/24, 9:08 pm - +91 93504 93727: https://www.instagram.com/share/reel/BADBXbGnrt
+28/12/24, 9:08 am - Ayush Kadian: <Media omitted>
+28/12/24, 9:08 am - Ayush Kadian: 217 m kon kon batha h???
+31/12/24, 9:08 am - Kapil Yadav: <Media omitted>
+03/01/25, 12:35 pm - Jiya Grover: In predictive analytics, Analysis of Variance (ANOVA) is a statistical technique used to analyze the differences between group means in a dataset. ANOVA is commonly used to determine whether there are statistically significant differences between the means of three or more groups.
+
+Some important aspects of ANOVA in predictive analytics include:
+1. Understanding the null hypothesis and alternative hypothesis in the context of ANOVA.
+2. Interpreting the F-statistic and p-value to determine the significance of the differences between group means.
+3. Conducting post-hoc tests, such as Tukey's HSD or Bonferroni correction, to identify specific group differences.
+4. Checking assumptions of ANOVA, including homogeneity of variances and normality of residuals.
+5. Utilizing ANOVA in predictive modeling to assess the impact of categorical variables on the dependent variable.
+6. Considering the limitations of ANOVA and when alternative techniques, such as regression analysis or non-parametric tests, may be more appropriate in predictive analytics.
+
+Overall, ANOVA plays a crucial role in predictive analytics by helping analysts understand the relationships between categorical variables and the outcome of interest, providing valuable insights for decision-making and model building.
+03/01/25, 12:35 pm - Jiya Grover: ye Anova reh gya tha topic
+03/01/25, 12:35 pm - Jiya Grover: aap bhi kar lena or sab bacho ko personal gp mein share kar do
+03/01/25, 7:02 pm - +91 98715 86017: ‼Important Notice for **DRONACHARYA COLLEGE OF ENGINEERING ** Students from Central Govt of INDIA ‼
+
+Stipend Internships Programs (20,000/-)
+
+Kindly Share the link with your class groups and friends groups and juniors tell everyone to join the group
+
+For the Upcoming Placement Drive Join the Group By Using Below Link 👇👇
+
+Group link :https://chat.whatsapp.com/D6UBL4lbXCUFtrOH3hzpCc
+
+Once all the department students are joined we will post all the information in the group
+04/01/25, 9:06 am - Kapil Yadav: This message was deleted
+04/01/25, 9:06 am - Kapil Yadav: This message was deleted
+04/01/25, 9:06 am - Kapil Yadav: This message was deleted
+04/01/25, 9:08 am - Kapil Yadav: <Media omitted>
+07/01/25, 8:53 am - Harsh Rao: null
+07/01/25, 8:55 am - Harshit Thareja: so rude, do it again
+07/01/25, 9:10 am - Harshit Thareja: seating plan?
+07/01/25, 9:11 am - Kapil Yadav: Same
+10/01/25, 10:53 pm - Khushii Kumari: Heyy Guys, Do not make any payments to today's webinar organizers. For any queries, contact HOD Ma'am.
+13/01/25, 9:13 am - +91 95404 50222: <Media omitted>
+16/01/25, 9:09 am - Dhairya Valecha: Bhai koi seating plan bhejdo
+16/01/25, 9:10 am - +91 95404 50222: +1
+16/01/25, 9:20 am - Kapil Yadav: <Media omitted>
+16/01/25, 9:21 am - Kapil Yadav: <Media omitted>
+16/01/25, 12:55 pm - Kapil Yadav: Economics ka PPR kal hoga
+16/01/25, 1:35 pm - Arjun Gupta: Bhai kisi k paas meri BDA ki file h kya? <This message was edited>
+17/01/25, 5:03 am - Harshit Pandey 2: Bda ka updated index bhj do
+17/01/25, 7:00 am - Varun Sharma: <Media omitted>
+17/01/25, 9:31 am - Mayank Tanwar: <Media omitted>
+17/01/25, 9:31 am - Mayank Tanwar: <Media omitted>
+17/01/25, 9:41 am - +91 90506 00123: This message was deleted
+17/01/25, 10:51 am - Rahul Kumar: https://colab.research.google.com/drive/1W8GWmUQ5sH0NXqJgBqSUbIQsf6yIpBdM?usp=sharing
+18/01/25, 10:13 am - +91 81307 70421: This message was deleted
+18/01/25, 6:16 pm - +91 93504 93727: https://www.instagram.com/reel/DE9487hKzj8/?igsh=YjR2cXFtZjhwMnl3
+19/01/25, 7:54 pm - +91 93504 93727: https://www.instagram.com/reel/DFAdotvoCwF/?igsh=MzRkNm5hbHZ0ejF0
+29/01/25, 1:08 pm - +91 99106 03551: <Media omitted>
+29/01/25, 1:08 pm - +91 99106 03551: <Media omitted>
+29/01/25, 1:08 pm - +91 99106 03551: Hi everyone! 🌟
+
+As you continue with your learning journey, it’s important to choose a certification that aligns with your interests and future goals.
+
+To help you make an informed decision, please take a moment to fill out this Google Form, where you can select the certification that suits you best:
+https://forms.gle/pEfRtYJWQpsErUfG6
+
+Your choice will help us guide you in the right direction and ensure you gain the most value from your learning experience.
+If you have any questions, feel free to reach out!
+
+Looking forward to your responses. 😊
+
+Best regards,
+Prof. Pooja Khot
+CSE
+29/01/25, 1:08 pm - +91 99106 03551: <Media omitted>
+31/01/25, 11:21 am - Harshit Pandey 2: <Media omitted>
+31/01/25, 11:21 am - Harshit Pandey 2: https://www.instagram.com/engraved_love_?igsh=c3RuMnR2ZWVwbmU5
+08/02/25, 1:38 pm - Vishal Soni: <Media omitted>
+08/02/25, 1:38 pm - Vishal Soni: <Media omitted>
+08/02/25, 1:38 pm - Vishal Soni: <Media omitted>
+08/02/25, 1:38 pm - Vishal Soni: <Media omitted>
+08/02/25, 1:38 pm - Vishal Soni: <Media omitted>
+08/02/25, 1:38 pm - Vishal Soni: <Media omitted>
+08/02/25, 1:57 pm - Khushii Kumari: 🚀 *Dronacharya Students, Ready to Experience the Excellence?* 💡✨  
+
+*Cognizance 2025*—The Annual Technical Fest of *IIT Roorkee* is back, bigger and better than ever! Mark your calendars for *March 21-23, 2025*, and gear up for an electrifying tech adventure. 🌍🎯  
+
+🔥 *What’s in store?*  
+🔹 *Competitions* – Robotics, Coding, Design, Finance & more! 🤖💻  
+🔹 *Workshops* – Powered by *Microsoft, Intel, Amazon*, and other top tech giants! 🚀 
+🔹 *Guest Lectures* – Immersive talks by eminent personalities. 🚀 
+🔹 *Concerts* – Past performers include *KK, Amit Trivedi, Mohit Chauhan* & more! 🎶🔥  
+
+🎟 Don’t just hear about it—experience it! Stay updated & be part of something truly extraordinary.  
+
+👉 *Official Aftermovie 2024* https://youtu.be/UYwkCRUxu2M?si=eJMiDgIG4MtQkwem 📲
+
+👉 Join our WhatsApp group now for more information:-
+https://chat.whatsapp.com/LNHc0snZOkh1yNrd56SSYD
+08/02/25, 8:11 pm - Khushii Kumari: <Media omitted>
+08/02/25, 8:11 pm - Khushii Kumari: This message was deleted
+08/02/25, 8:11 pm - Harshit Pandey 2: 🤣
+08/02/25, 8:20 pm - Khushii Kumari: There is some discount jo first 10/15 days of registration valid rhega so jisko bhi jana hai phle batch me hi register kar lena.
+10/02/25, 6:08 pm - +91 93504 93727: https://www.instagram.com/reel/DF5HLNzTUwg/?igsh=MWRtd3NqMWw2M3pnYw==
+11/02/25, 6:15 pm - +91 93504 93727: https://www.instagram.com/reel/DF7sCr4z7zO/?igsh=cHVtODNwMHhvNm5r
+12/02/25, 6:42 pm - +91 93504 93727: What do you think about this tool ? 😁😁
+.
+https://www.instagram.com/reel/DF-Q0tFTsEQ/?igsh=MXM4OHI5Y2p1emxzMA==
+13/02/25, 7:06 pm - +91 93504 93727: This message was deleted
+13/02/25, 7:20 pm - +91 93504 93727: This message was deleted
+14/02/25, 1:33 pm - Kapil Yadav: This message was deleted
+14/02/25, 1:35 pm - Kapil Yadav: https://chat.whatsapp.com/JF3hPaoJijpHfFKUDPXuOR
+15/02/25, 6:12 pm - +91 93504 93727: This message was deleted
+15/02/25, 6:28 pm - +91 93504 93727: This message was deleted
+15/02/25, 9:14 pm - Samay Pawar: This message was deleted
+17/02/25, 6:12 pm - +91 93504 93727: Comment the word send and I will share you the link 👇
+https://www.instagram.com/reel/DGLIhMmT43i/?igsh=ZWdpNDEyNnI2MG5z
+18/02/25, 10:13 am - Harsh Rao: <Media omitted>
+18/02/25, 10:13 am - Harsh Rao: Change krde dp
+18/02/25, 2:41 pm - Kapil Yadav: https://github.com/Techsaksham/TSP4.0-Foundation-Lab-Repo/tree/main/UNIT%203
+19/02/25, 11:08 am - +91 95404 50222: <Media omitted>
+19/02/25, 2:47 pm - Vivin Sharma: <Media omitted>
+19/02/25, 4:42 pm - +91 95712 62483: *ATTENTION STUDENTS 👩‍🎓*
+
+_Students who have not done any Internship till now / are looking forward for *Online Training Internship* opportunities can join the Group from the Link Mentioned Below to know about the Opportunities Available!_
+
+_PS: You can successfully submit this as your  Industrial Training Report / Internship Completion Certificate in your college !_
+
+_Also the Major & Minor Projects that you do here, can be submitted to the College._
+
+*INTERESTED STUDENTS CAN JOIN THE GROUP  FURTHER  DETAILS*
+https://chat.whatsapp.com/EKE3zENZvw00pck4P3MOTv
+19/02/25, 4:42 pm - +91 95712 62483: This message was deleted
+19/02/25, 6:19 pm - +91 93504 93727: This message was deleted
+19/02/25, 6:20 pm - +91 93504 93727: This message was deleted
+20/02/25, 6:11 pm - +91 93504 93727: Comment the word grok to get the link
+😁😁
+https://www.instagram.com/reel/DGS2yJkztJF/?igsh=MWtvanJzZXZudWM1cQ==
