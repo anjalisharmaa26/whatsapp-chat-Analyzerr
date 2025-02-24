@@ -20,7 +20,7 @@ st.markdown("""
         }
     </style>
     <p class="description">
-        📊 Welcome to the **WhatsApp Chat Analyzer**! Upload your chat file and gain insights into 
+        📊 Welcome to the WhatsApp Chat Analyzer! Upload your chat file and gain insights into 
         your messaging trends, activity patterns, most-used words, and emojis. 
         Explore your chat data in a visually appealing and interactive way! 🚀
     </p>
