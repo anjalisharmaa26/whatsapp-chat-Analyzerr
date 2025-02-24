@@ -9,6 +9,24 @@ plt.rcParams['font.family'] = 'Segoe UI Emoji'
 # Streamlit Page Configuration
 st.set_page_config(page_title="WhatsApp Chat Analyzer", layout="wide")
 
+# App Description
+st.markdown("""
+    <style>
+        .description {
+            font-size: 18px;
+            text-align: center;
+            color: lightgray;
+            margin-bottom: 20px;
+        }
+    </style>
+    <p class="description">
+        📊 Welcome to the **WhatsApp Chat Analyzer**! Upload your chat file and gain insights into 
+        your messaging trends, activity patterns, most-used words, and emojis. 
+        Explore your chat data in a visually appealing and interactive way! 🚀
+    </p>
+""", unsafe_allow_html=True)
+
+
 # Global Matplotlib Settings for Dark Theme
 plt.style.use('dark_background')
 plt.rcParams.update({'axes.facecolor': '#1e1e1e', 'axes.edgecolor': 'white', 'xtick.color': 'white', 'ytick.color': 'white', 'text.color': 'white', 'axes.labelcolor': 'white'})
