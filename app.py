@@ -4,162 +4,165 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import seaborn as sns
 
-plt.rcParams['axes.unicode_minus'] = False  # Avoids Unicode issues
-plt.rcParams['font.family'] = 'Segoe UI Emoji'  # Windows Emoji Font
+plt.rcParams['font.family'] = 'Segoe UI Emoji'
 
-st.sidebar.title("Whatsapp Chat Analyzer")
+# Streamlit Page Configuration
+st.set_page_config(page_title="WhatsApp Chat Analyzer", layout="wide")
 
-uploaded_file = st.sidebar.file_uploader("Choose a file")
+# Global Matplotlib Settings for Dark Theme
+plt.style.use('dark_background')
+plt.rcParams.update({'axes.facecolor': '#1e1e1e', 'axes.edgecolor': 'white', 'xtick.color': 'white', 'ytick.color': 'white', 'text.color': 'white', 'axes.labelcolor': 'white'})
 
-if uploaded_file is not None:
+# Sidebar Configuration
+st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", width=80)
+st.sidebar.title("📊 WhatsApp Chat Analyzer")
+
+uploaded_file = st.sidebar.file_uploader("📂 Upload Your Chat File")
+
+if uploaded_file:
     bytes_data = uploaded_file.getvalue()
     data = bytes_data.decode("utf-8")
     df = preprocessor.preprocess(data)
-    st.dataframe(df)
 
-    # fetch unique users
+    # Fetch unique users
     user_list = df['user'].unique().tolist()
     if 'group_notification' in user_list:
         user_list.remove('group_notification')
     user_list.sort()
     user_list.insert(0, "Overall")
 
-    selected_user = st.sidebar.selectbox("Show analysis wrt", user_list)
+    selected_user = st.sidebar.selectbox("👥 Select User", user_list)
 
+    if st.sidebar.button("🔍 Analyze Chat"):
+        st.markdown("<h1 style='text-align: center; color: white;'>📊 WhatsApp Chat Analysis</h1>", unsafe_allow_html=True)
 
-    if st.sidebar.button("Show Analysis"):
-
-        # Stats Area
+        # --- Statistics Section ---
         num_messages, words, num_media_messages, num_links = helper.fetch_stats(selected_user, df)
-        st.title("Top Statistics")
+
+        st.markdown("### 📌 Chat Insights")
         col1, col2, col3, col4 = st.columns(4)
 
-        with col1:
-            st.markdown("### Total Messages")
-            st.markdown(f"## {num_messages}")
-        with col2:
-            st.markdown("### Total Words")
-            st.markdown(f"## {words}")
-        with col3:
-            st.markdown("### Media Shared")
-            st.markdown(f"## {num_media_messages}")
-        with col4:
-            st.markdown("### Links Shared")
-            st.markdown(f"## {num_links}")
+        col1.metric("📝 Total Messages", num_messages)
+        col2.metric("🗣️ Total Words", words)
+        col3.metric("📷 Media Shared", num_media_messages)
+        col4.metric("🔗 Links Shared", num_links)
 
-        # monthly timeline
-        st.title("Monthly Timeline")
+        # --- Monthly Timeline ---
+        st.markdown("### 📅 Monthly Chat Activity")
         timeline = helper.monthly_timeline(selected_user, df)
         fig, ax = plt.subplots()
-        ax.plot(timeline['time'], timeline['message'], color = 'green')
-        plt.xticks(rotation='vertical')
+        ax.plot(timeline['time'], timeline['message'], marker="o", linestyle="-", color="lime", linewidth=2)
+        ax.set_xlabel("Time", color='white')
+        ax.set_ylabel("Messages", color='white')
+        plt.xticks(rotation=45)
         st.pyplot(fig)
 
-        # daily timeline
-        st.title("Daily Timeline")
+        # --- Daily Timeline ---
+        st.markdown("### 📆 Daily Chat Trends")
         daily_timeline = helper.daily_timeline(selected_user, df)
         fig, ax = plt.subplots()
-        ax.plot(daily_timeline['only_date'], daily_timeline['message'], color='black')
-        plt.xticks(rotation='vertical')
+        ax.plot(daily_timeline['only_date'], daily_timeline['message'], marker="o", linestyle="-", color="cyan", linewidth=2)
+        ax.set_xlabel("Date", color='white')
+        ax.set_ylabel("Messages", color='white')
+        plt.xticks(rotation=45)
         st.pyplot(fig)
 
-        # activity map
-        st.title("Activity Map")
+        # --- Activity Map ---
+        st.markdown("### 📊 Activity Patterns")
         col1, col2 = st.columns(2)
 
         with col1:
-            st.header("Most busy day")
+            st.markdown("#### 🗓️ Most Active Days")
             busy_day = helper.week_activity_map(selected_user, df)
             fig, ax = plt.subplots()
-            ax.bar(busy_day.index, busy_day.values)
-            plt.xticks(rotation='vertical')
+            ax.bar(busy_day.index, busy_day.values, color="#4c72b0")
+            ax.set_xlabel("Days", color='white')
+            ax.set_ylabel("Messages", color='white')
+            plt.xticks(rotation=45)
             st.pyplot(fig)
 
         with col2:
-            st.header("Most busy month")
+            st.markdown("#### 📅 Most Active Months")
             busy_month = helper.month_activity_map(selected_user, df)
             fig, ax = plt.subplots()
-            ax.bar(busy_month.index, busy_month.values, color = 'orange')
-            plt.xticks(rotation = 'vertical')
+            ax.bar(busy_month.index, busy_month.values, color="orange")
+            ax.set_xlabel("Months", color='white')
+            ax.set_ylabel("Messages", color='white')
+            plt.xticks(rotation=45)
             st.pyplot(fig)
 
-        st.title("Weekly Activity Map")
+        # --- Weekly Activity Heatmap ---
+        st.markdown("### 🔥 Weekly Activity Heatmap")
         user_heat_map = helper.activity_heat_map(selected_user, df)
-        fig, ax = plt.subplots()
-        ax = sns.heatmap(user_heat_map)
+        fig, ax = plt.subplots(figsize=(10, 5))
+        sns.heatmap(user_heat_map, cmap="coolwarm", linewidths=0.3, linecolor="white", cbar=True, annot=False)
+        ax.set_xlabel("Hour", color='white')
+        ax.set_ylabel("Day", color='white')
         st.pyplot(fig)
 
-
-        # finding the busiest user in the group(Group level)
+        # --- Busiest User Analysis (For Groups) ---
         if selected_user == 'Overall':
-            st.title('Most Busy Users')
+            st.markdown("### 👥 Most Active Users")
             x, new_df = helper.most_busy_users(df)
-            fig, ax = plt.subplots()
-            col1, col2 = st.columns(2)
+            col1, col2 = st.columns([2, 3])
+
             with col1:
                 st.dataframe(new_df)
+
             with col2:
-                ax.bar(x.index, x.values, color = 'red')
-                plt.xticks(rotation = 'vertical')
+                fig, ax = plt.subplots()
+                ax.bar(x.index, x.values, color="red")
+                ax.set_xlabel("Users", color='white')
+                ax.set_ylabel("Messages", color='white')
+                plt.xticks(rotation=45)
                 st.pyplot(fig)
 
-        # Wordcloud
-        st.title("Wordcloud")
+        # --- Wordcloud ---
+        st.markdown("### ☁️ WordCloud")
         df_wc = helper.create_wordcloud(selected_user, df)
-        fig, ax = plt.subplots()
-        ax.imshow(df_wc)
+        fig, ax = plt.subplots(figsize=(10, 5))
+        ax.imshow(df_wc, interpolation="bilinear")
+        ax.axis("off")
         st.pyplot(fig)
 
-        # most common words
+        # --- Most Common Words ---
+        st.markdown("### 🔤 Most Common Words")
         most_common_df = helper.most_common_words(selected_user, df)
 
-        fig, ax = plt.subplots()
-        ax.barh(most_common_df[0], most_common_df[1])
-        plt.xticks(rotation = 'vertical')
-
-        st.title('Most common words')
+        fig, ax = plt.subplots(figsize=(10, 5))
+        ax.barh(most_common_df[0], most_common_df[1], color="teal")
+        ax.set_xlabel("Words", color='white')
+        ax.set_ylabel("Frequency", color='white')
+        plt.xticks(rotation=45)
         st.pyplot(fig)
 
-        # emoji analysis
+        # --- Emoji Analysis ---
+        st.markdown("### 😀 Emoji Analysis")
         emoji_df = helper.emoj_helper(selected_user, df)
-        st.title("Emoji Analysis")
+
         col1, col2 = st.columns(2)
         with col1:
             st.dataframe(emoji_df)
-        # with col2:
-        #     fig,ax = plt.subplots()
-        #     ax.pie(emoji_df[1].head(), labels=emoji_df[0].head(), autopct="%0.2f")
-        #     st.pyplot(fig)
-        # Emoji Analysis
-
         with col2:
-            fig, ax = plt.subplots(figsize=(6, 6))
 
-            # Define Colors
+            fig, ax = plt.subplots(figsize=(6, 6))
             colors = sns.color_palette("pastel")
 
-            # Creating Pie Chart
             wedges, texts, autotexts = ax.pie(
                 emoji_df[1].head(),
-                labels=emoji_df[0].head(),
+                labels=[f"{emoji} ({count})" for emoji, count in zip(emoji_df[0].head(), emoji_df[1].head())],
                 autopct="%0.2f%%",
                 colors=colors,
-                textprops={'fontsize': 14},
+                textprops={'fontsize': 11, 'color': 'magenta'},
                 wedgeprops={'edgecolor': 'black'},
                 pctdistance=0.85,
                 shadow=True
             )
 
-            # Adjust label size
+            # Set font to support emojis
+            emoji_font = fm.FontProperties(fname=fm.findSystemFonts(fontpaths=None, fontext='ttf')[0])
             for text in texts:
-                text.set_fontsize(16)
-                text.set_fontweight('bold')
+                text.set_fontproperties(emoji_font)
 
-            for autotext in autotexts:
-                autotext.set_fontsize(12)
-                autotext.set_color('black')
-
-            ax.set_title("Top Used Emojis", fontsize=18, fontweight='bold', pad=20)
+            ax.set_title("Top Used Emojis", fontsize=18, fontweight='bold', pad=20, color='white')
             st.pyplot(fig)
-
-
